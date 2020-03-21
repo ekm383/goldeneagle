@@ -10,9 +10,6 @@ const Banner = ({ style, title, titleSmall, subtitle, children }) => {
         <h3 className="subtitle">{subtitle}</h3>
         {children}
       </div>
-      <div className="box">
-        {/* <img style={{ margin: "0 auto" }} src={} alt="food" /> */}
-      </div>
     </BannerWrapper>
   )
 }
@@ -25,7 +22,8 @@ const BannerWrapper = styled.div`
   margin-left: 3rem;
   color: var(--white);
   .box {
-    flex-basis: 40%;
+    flex-basis: 80%;
+    text-align: center;
   }
   img {
     width: 100%;
@@ -45,7 +43,7 @@ const BannerWrapper = styled.div`
   }
   .subtitle {
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: lighter;
     line-height: 1.5rem;
   }
   @media (max-width: 768px) {

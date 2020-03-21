@@ -1,16 +1,37 @@
-import React from "react"
+import React, { Component } from "react"
+import NavBarHeader from "./NavBarHeader"
+import NavBarLinks from "./NavBarLinks"
 import styled from "styled-components"
 
-const HeaderPage = ({ img, children }) => {
-  return <IndexHeader img={img}>{children}</IndexHeader>
+export default class NavBar extends Component {
+  state = {
+    navBarOpen: false,
+  }
+
+  handleNavBar = () => {
+    this.setState(() => {
+      return { navBarOpen: !this.state.navBarOpen }
+    })
+  }
+
+  render() {
+    return (
+      <NavWrapper>
+        <NavBarHeader handleNavBar={this.handleNavBar} />
+        <NavBarLinks navBarOpen={this.state.navBarOpen} />
+      </NavWrapper>
+    )
+  }
 }
 
-const IndexHeader = styled.header`
-  min-height: calc(20vh);
-  background: url(${props => props.img}) center repeat;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+const NavWrapper = styled.nav`
+  width: 100%;
+  position: fixed;
+  background: white;
+  z-index: 999;
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 `
-
-export default HeaderPage

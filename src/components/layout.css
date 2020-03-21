@@ -4,7 +4,8 @@
 }
 
 :root {
-  --mainBlue: #5cb2d2;
+  --mainColor: #e84a41;
+  --secondaryColor: #ffda71;
   --darkGray: #171717;
   --gray: #666666;
   --lightGray: #818181;
@@ -16,6 +17,15 @@ body {
   font-family: "Open Sans";
   background-color: var(--white);
   color: var(--gray);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins";
 }
 
 h4,

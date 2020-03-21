@@ -6,21 +6,22 @@ const Button = ({ children, style }) => {
 }
 
 const ButtonWrapper = styled.button`
-  width: 10rem;
+  /* width: 10rem; */
   display: block;
+  margin: 2rem auto 0rem auto;
   color: var(--white);
-  background: var(--mainBlue);
-  border: 1px solid var(--mainBlue);
+  background: var(--mainColor);
+  border: 1px solid var(--mainColor);
   cursor: pointer;
   padding: 1rem 2rem;
   font-size: 1rem;
   letter-spacing: 1px;
-  font-weight: 400;
+  font-weight: 700;
   transition: all 0.2s linear;
   &:hover {
     background: transparent;
-    border: 1px solid var(--mainBlue);
-    color: var(--mainBlue);
+    border: 1px solid var(--mainColor);
+    color: var(--mainColor);
   }
   &:focus {
     outline: none;

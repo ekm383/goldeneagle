@@ -29,11 +29,12 @@ class Footer extends Component {
         <div className="box contact">
           <h4>Contact Information</h4>
           <p>
-            1311 Kapiolani Blvd Suite
+            2334 S King St,
             <br />
-            509 Honolulu, Hawaii 96814
+            Honolulu, HI 96826
           </p>
-          <p className="phone">(808) 123-4567</p>
+          <p className="phone">(808) 955-5080</p>
+          <p>Open Daily 10:30am - 9:00pm</p>
           {this.state.icons.map(item => (
             <a
               href={item.path}
@@ -46,7 +47,7 @@ class Footer extends Component {
           ))}
         </div>
         <div className="box map">
-          <img src={map} alt="map" width="100%" height="auto" />
+          <img src={map} alt="map" width="100%" height="100%" />
         </div>
       </FooterWrapper>
     )
@@ -57,6 +58,7 @@ const FooterWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  height: 100%;
   background: var(--gray);
   color: var(--white);
   p,
@@ -64,8 +66,8 @@ const FooterWrapper = styled.div`
     font-size: 0.8rem;
   }
   .box {
-    flex-basis: 45%;
-    padding: 3rem;
+    flex-basis: 46%;
+    padding: 2rem;
   }
   .map {
     background: lightgray;

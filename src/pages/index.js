@@ -7,7 +7,7 @@ import Banner from "../components/globals/banner/Banner"
 import Button from "../components/globals/button/Button"
 import Section from "../components/globals/section/Section"
 import ContactForm from "../components/ContactForm"
-import imgIndex from "../images/bg/header-home.jpg"
+import imgIndex from "../images/bg/golden-eagle-restaurant.jpg"
 
 const IndexPage = () => (
   <Layout>
@@ -25,16 +25,19 @@ const IndexPage = () => (
     <HeaderIndex img={imgIndex}>
       <Section style={{ width: "100vw", alignItems: "center" }}>
         <Banner
-          titleSmall="Restaurant Marketing Hawaii"
-          subtitle="Running a restaurant is your passion, marketing your restaurant is ours. Better branding. Better results."
+          titleSmall="Golden Eagle Chinese Restaurant"
+          subtitle="Golden Eagle Chinese Restaurant is located on King Street in Honolulu. We are open daily serving your favorite Chinese Cuisine."
         >
-          <AniLink fade to="/sign-up">
-            <Button>SIGN UP</Button>
+          <AniLink fade to="#menu">
+            <Button>ORDER TAKEOUT</Button>
           </AniLink>
         </Banner>
       </Section>
     </HeaderIndex>
-    <Section>
+    <Section id="menu" style={{ height: "50vh" }}>
+      <div>menu section</div>
+    </Section>
+    <Section id="information" style={{ height: "50vh" }}>
       <ContactForm />
     </Section>
   </Layout>

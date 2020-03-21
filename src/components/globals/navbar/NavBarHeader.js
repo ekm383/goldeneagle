@@ -7,7 +7,9 @@ const NavBarHeader = ({ handleNavBar }) => {
   return (
     <HeaderWrapper>
       <Link to="/">
-        <p className="logo">RMH</p>
+        <p className="logo">
+          <strong>GOLDEN EAGLE </strong>Chinese Restaurant
+        </p>
       </Link>
       <FaBars
         className="toggle-icon"
@@ -30,21 +32,22 @@ const HeaderWrapper = styled.div`
     color: var(--DarkGray);
     cursor: pointer;
   }
+  .logo {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: light;
+    margin-left: 10px;
+    color: var(--mainColor);
+  }
+  a {
+    text-decoration: none;
+  }
   @media (min-width: 768px) {
     .toggle-icon {
       display: none;
     }
     padding: 0.4rem 1rem;
-  }
-  .logo {
-    font-size: 1.5rem;
-    font-weight: 700;
-    letter-spacing: 2px;
-    margin-left: 10px;
-    color: var(--mainBlue);
-  }
-  a {
-    text-decoration: none;
   }
 `
 

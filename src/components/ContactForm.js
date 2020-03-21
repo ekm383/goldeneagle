@@ -52,6 +52,7 @@ const ContactForm = () => {
 const FormWrapper = styled.div`
   width: 80%;
   padding-bottom: 4rem;
+  margin: 0px auto;
   .visuallyhidden {
     border: 0;
     clip: rect(0 0 0 0);
@@ -64,8 +65,8 @@ const FormWrapper = styled.div`
   }
 
   .button {
-    color: #ffffff;
-    background-color: var(--mainBlue);
+    color: var(--white);
+    background-color: var(--mainColor);
     padding: 12px 25px;
     font-size: 12px;
     letter-spacing: 1px;
@@ -118,7 +119,7 @@ const FormWrapper = styled.div`
   .button--close:active,
   .button--close:focus {
     color: #fbcf34;
-    background-color: #ffffff;
+    background-color: var(--mainColor);
     box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.1);
   }
 
@@ -138,11 +139,11 @@ const FormWrapper = styled.div`
     border-bottom: 1px solid #f0f0f0;
   }
   input:valid {
-    border-color: var(--mainBlue);
+    border-color: var(--secondaryColor);
   }
   input:focus {
     outline: none;
-    border-color: var(--mainBlue);
+    border-color: var(--secondaryColor);
   }
 
   .form-list {
