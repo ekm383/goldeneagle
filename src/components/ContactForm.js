@@ -1,9 +1,9 @@
 import React from "react"
-import styled from "styled-components"
+// import styled from "styled-components"
 
 const ContactForm = () => {
   return (
-    <FormWrapper>
+    <div>
       <form name="contact" method="POST" data-netlify="true">
         <p>
           <label>
@@ -65,7 +65,7 @@ const ContactForm = () => {
           </li>
         </ul>
       </form> */}
-    </FormWrapper>
+    </div>
   )
 }
 
