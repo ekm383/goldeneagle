@@ -4,9 +4,20 @@ import styled from "styled-components"
 const ContactForm = () => {
   return (
     <FormWrapper>
-      <form name="contact" method="POST" data-netlify="true">
+      <form
+        name="contact"
+        method="POST"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+      >
         <input type="hidden" name="form-name" value="contact" />
         <ul class="form-list">
+          <div hidden>
+            <label>
+              Don’t fill this out:{" "}
+              <input name="bot-field" onChange={this.handleChange} />
+            </label>
+          </div>
           <li class="form-list__row">
             <label htmlFor="name">
               Name:
