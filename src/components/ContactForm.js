@@ -7,17 +7,16 @@ const ContactForm = () => {
       <form
         name="contact"
         method="POST"
+        netlify-honeypot="bot-field"
         data-netlify="true"
-        data-netlify-honeypot="bot-field"
       >
         <input type="hidden" name="form-name" value="contact" />
         <ul class="form-list">
-          <div hidden>
+          <li class="hidden">
             <label>
-              Don’t fill this out:{" "}
-              <input name="bot-field" onChange={this.handleChange} />
+              Don’t fill this out if you're human: <input name="bot-field" />
             </label>
-          </div>
+          </li>
           <li class="form-list__row">
             <label htmlFor="name">
               Name:
