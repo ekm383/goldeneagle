@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import styled from "styled-components"
-import map from "../../../images/bg/restaurant-marketing-hawaii-map.jpg"
+import map from "../../../images/bg/golden-eagle-honolulu-map.png"
 import { FaInstagram, FaFacebook, FaGoogle } from "react-icons/fa"
 
 class Footer extends Component {

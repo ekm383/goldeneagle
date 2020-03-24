@@ -29,7 +29,7 @@ const HeaderWrapper = styled.div`
   justify-content: space-between;
   .toggle-icon {
     font-size: 1.5rem;
-    color: var(--DarkGray);
+    color: var(--white);
     cursor: pointer;
   }
   .logo {
@@ -38,7 +38,7 @@ const HeaderWrapper = styled.div`
     letter-spacing: 1px;
     font-weight: light;
     margin-left: 10px;
-    color: var(--mainColor);
+    color: var(--white);
   }
   a {
     text-decoration: none;

@@ -26,7 +26,6 @@ const ContactForm = () => {
           <li class="form-list__row">
             <label htmlFor="message">
               Message
-              <br />
               <textarea
                 id="message"
                 type="textarea"
@@ -139,11 +138,11 @@ const FormWrapper = styled.div`
     border-bottom: 1px solid #f0f0f0;
   }
   input:valid {
-    border-color: var(--secondaryColor);
+    border-color: lightgreen;
   }
   input:focus {
     outline: none;
-    border-color: var(--secondaryColor);
+    border-color: lightgreen;
   }
 
   .form-list {

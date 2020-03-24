@@ -42,7 +42,7 @@ const LinkWrapper = styled.ul`
     display: block;
     text-decoration: none;
     padding: 0.8rem 1.2rem;
-    color: var(--mainColor);
+    color: var(--white);
     font-size: 1rem;
     text-transform: uppercase;
     cursor: pointer;
@@ -53,12 +53,6 @@ const LinkWrapper = styled.ul`
       padding: 0.8rem 1.5rem;
     }
   }
-  li:nth-child(7) {
-    background: var(--mainColor);
-  }
-  li:nth-child(7) > a {
-    color: var(--white);
-  }
   height: ${props => (props.open ? "100px" : "0px")};
   overflow: hidden;
   transition: all 0.3s ease-in-out;
@@ -67,7 +61,8 @@ const LinkWrapper = styled.ul`
     display: flex;
     .nav-link {
       padding: 1rem 1.2rem;
-      font-size: 0.9rem;
+      font-size: 0.8rem;
+      letter-spacing: 1px;
     }
     .nav-link:hover {
       background: var(--white);
