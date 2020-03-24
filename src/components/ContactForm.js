@@ -12,7 +12,7 @@ const ContactForm = () => {
       >
         <input type="hidden" name="form-name" value="contact" />
         <ul class="form-list">
-          <li class="hidden">
+          <li id="hidden">
             <label>
               Don’t fill this out if you're human: <input name="bot-field" />
             </label>
@@ -55,6 +55,9 @@ const FormWrapper = styled.div`
   width: 80%;
   padding-bottom: 4rem;
   margin: 0px auto;
+  #hidden {
+    display: none;
+  }
   .visuallyhidden {
     border: 0;
     clip: rect(0 0 0 0);
