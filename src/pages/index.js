@@ -23,7 +23,7 @@ const IndexPage = () => (
         `Chinese Takeout`,
       ]}
     />
-    <HeaderIndex img={imgIndex}>
+    <HeaderIndex img={imgIndex} style={{ padding: "4rem 0rem" }}>
       <Section style={{ width: "100vw", alignItems: "center" }}>
         <Banner
           titleSmall="Golden Eagle Chinese Restaurant"
