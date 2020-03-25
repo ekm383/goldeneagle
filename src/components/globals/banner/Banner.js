@@ -19,7 +19,7 @@ const BannerWrapper = styled.div`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-left: 3rem;
+  margin: 0 auto;
   color: var(--white);
   .box {
     flex-basis: 80%;
@@ -47,9 +47,9 @@ const BannerWrapper = styled.div`
     line-height: 1.5rem;
   }
   @media (max-width: 768px) {
-    flex-basis: 100%;
+    flex-basis: 90%;
     justify-content: flex-start;
-    margin-left: 1rem;
+    margin: 0 auto;
     .box {
       flex-basis: 100%;
     }
