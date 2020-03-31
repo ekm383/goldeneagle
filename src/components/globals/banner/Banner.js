@@ -15,7 +15,7 @@ const Banner = ({ style, title, titleSmall, subtitle, children }) => {
 }
 
 const BannerWrapper = styled.div`
-  width: 90%;
+  width: 80%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
