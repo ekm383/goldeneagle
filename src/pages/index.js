@@ -8,7 +8,6 @@ import Button from "../components/globals/button/Button"
 import Section from "../components/globals/section/Section"
 import ContactForm from "../components/ContactForm"
 import Intro from "../components/Intro"
-import imgIndex from "../images/bg/golden-eagle-restaurant.jpg"
 
 const IndexPage = () => (
   <Layout>
@@ -23,7 +22,7 @@ const IndexPage = () => (
         `Chinese Takeout`,
       ]}
     />
-    <HeaderIndex img={imgIndex} style={{ padding: "4rem 0rem" }}>
+    <HeaderIndex style={{ padding: "4rem 0rem" }}>
       <Section style={{ width: "100vw", alignItems: "center" }}>
         <Banner
           titleSmall="Golden Eagle Chinese Restaurant"
