@@ -8,6 +8,7 @@ import Button from "../components/globals/button/Button"
 import Section from "../components/globals/section/Section"
 import ContactForm from "../components/ContactForm"
 import Intro from "../components/Intro"
+import MenuIntegration from "../components/MenuIntegration"
 
 const IndexPage = () => (
   <Layout>
@@ -35,7 +36,7 @@ const IndexPage = () => (
       </Section>
     </HeaderIndex>
     <Section id="menu" style={{ marginTop: "2rem" }}>
-      <Intro heading="our menu" />
+      <MenuIntegration />
     </Section>
     <Section id="information" style={{ marginTop: "2rem" }}>
       <Intro heading="how can we help you?" />

@@ -52,7 +52,7 @@ const ContactForm = () => {
 }
 
 const FormWrapper = styled.div`
-  width: 80%;
+  width: 100%;
   padding-bottom: 4rem;
   margin: 0px auto;
   #hidden {
