@@ -46,9 +46,6 @@ class Footer extends Component {
             </a>
           ))}
         </div>
-        <div className="box map">
-          <img src={map} alt="map" width="100%" height="100%" />
-        </div>
       </FooterWrapper>
     )
   }
@@ -66,8 +63,9 @@ const FooterWrapper = styled.div`
     font-size: 0.8rem;
   }
   .box {
-    flex-basis: 46%;
+    flex-basis: 100%;
     padding: 2rem;
+    text-align: center;
   }
   .map {
     background: lightgray;
